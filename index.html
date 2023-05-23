@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      defer
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="excercise-container">
+        <article class="header">
+          <img src="images/icon.png" alt="Maper Icon" height="30px">
+        </article>
+        <article>
+          <form class="excercise-form article">
+            <div class="grid-item mb">
+              <div>Type</div>
+              <div>
+                <select name="" id="type">
+                  <option value="running">Running</option>
+                  <option value="cycling">Cycling</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid-item mb">
+              <div>Distance</div>
+              <div>
+                <input type="number" name="" id="distance" placeholder="km" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>Duration</div>
+              <div>
+                <input type="number" name="" id="duration" placeholder="min" />
+              </div>
+            </div>
+            <div class="grid-item steps-input-container">
+              <div>Steps</div>
+              <div>
+                <input type="number" name="" id="steps" placeholder="count" />
+              </div>
+            </div>
+            <div class="grid-item elevation-input-container hidden">
+              <div>Elevation</div>
+              <div>
+                <input type="number" name="" id="elevation" placeholder="meters" />
+              </div>
+            </div>
+            <button type="submit" hidden />
+          </form>
+        </article>
+      </section>
+      <section class="map-container">
+        <article id="map"></article>
+      </section>
+    </main>
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
